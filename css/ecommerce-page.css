@@ -61,6 +61,7 @@ section {
   background: #1f1f27;
   padding: 10px 20px;
   border-radius: 20px;
+  align-items: center;
 }
 
 .search-bar input {
@@ -88,6 +89,9 @@ section {
   min-width: 60px;
   text-transform: capitalize;
   cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }
 
 .option i {
@@ -145,6 +149,9 @@ i.fa-th-list {
   height: 40px;
   border: 1px solid #8d8ba5;
   cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .products {
@@ -223,10 +230,11 @@ i.fa-th-list {
 .grid .product-info {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
   gap: 20px;
   text-align: center;
   padding: 0 20px 30px;
+  height: 200px;
+  margin-top: 20px;
 }
 
 .grid .product-action {
@@ -247,6 +255,7 @@ i.fa-th-list {
 .lines .product {
   display: flex;
   padding: 20px;
+  align-items: center;
 }
 
 .lines .product-image-wrapper {
@@ -258,19 +267,21 @@ i.fa-th-list {
   display: flex;
   flex-direction: column;
   width: 100%;
-  padding: 10px;
-  gap: 40px;
+  padding: 15px;
+  gap: 10px;
 }
 
 .lines .product-info {
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 20px;
+  height: 50xp
 }
 
 .lines .product-action {
   display: flex;
-  padding: 30px;
+  gap: 40px;
+  margin-top: 20px;
 }
 
 /* LINES-ACTION VIEW */
@@ -301,14 +312,16 @@ i.fa-th-list {
 .lines-action .product-info {
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  padding-left: 15px;
   gap: 10px;
 }
 
 .lines-action .product-action {
   display: flex;
   flex-direction: column;
-  padding-top: 30px;
   align-items: center;
+  justify-content: center;
   border-left: 1px solid #8d8ba5;
   padding-left: 30px;
   min-width: 200px;
