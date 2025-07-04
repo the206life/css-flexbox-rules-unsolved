@@ -6,16 +6,58 @@
   box-sizing: border-box;
 }
 
+.top-nav{
+  position: fixed;
+  width: auto;
+  height: 50px;
+  background-color: black;
+  align-items: center;
+  top: 0px;
+  left: 0;
+  right: 0;
+  z-index: 10;
+}
+
 body {
   font-family: Arial, Helvetica, sans-serif;
 }
 
 .content {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
   padding: 30px;
+  margin: 20px;
+}
+
+.form-header{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.form-submit-control{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+}
+.form-input-control{
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.form-group-horizontal-control{
+  display: flex;
+  justify-content: space-between;
+}
+select{
+  width: 400px;
 }
 
 h2 {
   text-transform: uppercase;
+  
 }
 
 p {
@@ -25,8 +67,12 @@ p {
 /* 👇👇👇  ADD YOUR FORM STYLES BENEATH  👇👇👇*/
 
 form {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
   border: 1px solid #a9a9a9;
   padding: 20px;
+  margin-top: 50px;
 }
 
 .subtext {
@@ -37,6 +83,7 @@ form {
 #sign-in,
 #sign-up {
   width: 100%;
+
 }
 
 a {
